@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ParallaX Hockey Team</title>
+        <link rel="stylesheet" href="styles.css" class="css" />
+        <link
+            rel="shortcut icon"
+            href="./Images/logo.png"
+            type="image/x-icon"
+        />
 
         <!-- DaisyUI and Tailwind CSS CDN -->
         <link
@@ -20,7 +26,7 @@
                     extend: {
                         colors: {
                             "text-grey": "",
-                            "text-primary": "",
+                            "text-primary": "#014BA0",
                             "text-white": "",
                             primary: "#014BA0",
                         },
@@ -37,7 +43,83 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        
+    <body class="font-manrope m-5">
+        <header>
+            <nav
+                class="flex items-center space-y-3 lg:space-y-0 justify-between lg:w-[1170px] mx-auto lg:mt-16 mt-6"
+            >
+                <!-- Dropdown menu -->
+                <div class="flex items-center">
+                    <div class="dropdown dropdown-bottom lg:hidden ">
+                        <div tabindex="0" role="button" class="btn bg-transparent p-0 mr-4 shadow-none border-none">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M3.75 6.75H20.25M3.75 12H12.5M3.75 17.25H20.25"
+                                    stroke="#131318"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 font-semibold"
+                        >
+                            <li><a href="#" class="text-primary">Home</a></li>
+                            <li><a href="#" class="">About</a></li>
+                            <li><a href="#" class="">Pages</a></li>
+                            <li><a href="#" class="">Blog</a></li>
+                            <li><a href="#" class="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="font-extrabold lg:text-4xl text-2xl">
+                        Paralla<span class="text-primary">X</span>
+                    </h1>
+                </div>
+                <!-- nav items -->
+                <div
+                    class="hidden lg:flex lg:gap-8 text-text-light items-center font-semibold"
+                >
+                    <a href="#" class="text-primary">Home</a>
+                    <a href="#" class="">About</a>
+                    <a href="#" class="">Pages</a>
+                    <a href="#" class="">Blog</a>
+                    <a href="#" class="">Contact Us</a>
+                </div>
+
+                <div class="flex items-center">
+                    <button
+                        class="btn btn-ghost btn-circle mr-6 text-[#89898B] hidden lg:block"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        class="btn btn-primary border-primary text-[16px] p-2 lg:text-xl lg:border-2  hover:border-primary hover:bg-transparent hover:text-black bg-primary max-h-10 lg:max-h-fit  text-white font-semibold"
+                    >
+                        Get Tickets
+                    </button>
+                </div>
+            </nav>
+        </header>
     </body>
 </html>

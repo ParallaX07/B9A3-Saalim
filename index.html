@@ -43,6 +43,7 @@
             rel="stylesheet"
         />
     </head>
+
     <body class="font-manrope m-5">
         <header>
             <nav
@@ -50,8 +51,12 @@
             >
                 <!-- Dropdown menu -->
                 <div class="flex items-center">
-                    <div class="dropdown dropdown-bottom lg:hidden ">
-                        <div tabindex="0" role="button" class="btn bg-transparent p-0 mr-4 shadow-none border-none">
+                    <div class="dropdown dropdown-bottom lg:hidden">
+                        <div
+                            tabindex="0"
+                            role="button"
+                            class="btn bg-transparent p-0 mr-4 shadow-none border-none"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -114,12 +119,86 @@
                         </svg>
                     </button>
                     <button
-                        class="btn btn-primary border-primary text-[16px] p-2 lg:text-xl lg:border-2  hover:border-primary hover:bg-transparent hover:text-black bg-primary max-h-10 lg:max-h-fit  text-white font-semibold"
+                        class="btn btn-primary border-primary text-[16px] p-2 lg:text-xl lg:border-2 hover:border-primary hover:bg-transparent hover:text-black bg-primary max-h-10 lg:max-h-fit text-white font-semibold"
                     >
                         Get Tickets
                     </button>
                 </div>
             </nav>
         </header>
+
+        <main>
+            <!-- Banner carsoul -->
+            <section
+                class="lg:w-[1170px] mx-auto lg:mt-[68px] mt-6 rounded-2xl"
+            >
+                <div class="carousel w-full min-h-48">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img
+                            src="./Images/banner.png"
+                            class="w-full rounded-2xl"
+                        />
+                        <div
+                            class="absolute flex lg:gap-4 gap-3 lg:justify-start justify-center transform -translate-y-0 left-5 right-5 bottom-4"
+                        >
+                            <a href="#slide4" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-left.svg" alt=""
+                            /></a>
+                            <a href="#slide2" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-right.svg" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img
+                            src="./Images/banner.png"
+                            class="w-full rounded-2xl"
+                        />
+                        <div
+                            class="absolute flex lg:gap-4 gap-3 lg:justify-start justify-center transform -translate-y-0 left-5 right-5 bottom-4"
+                        >
+                            <a href="#slide1" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-left.svg" alt=""
+                            /></a>
+                            <a href="#slide3" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-right.svg" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img
+                            src="./Images/banner.png"
+                            class="w-full rounded-2xl"
+                        />
+                        <div
+                            class="absolute flex lg:gap-4 gap-3 lg:justify-start justify-center transform -translate-y-0 left-5 right-5 bottom-4"
+                        >
+                            <a href="#slide2" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-left.svg" alt=""
+                            /></a>
+                            <a href="#slide4" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-right.svg" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img
+                            src="./Images/banner.png"
+                            class="w-full rounded-2xl"
+                        />
+                        <div
+                            class="absolute flex lg:gap-4 gap-3 lg:justify-start justify-center transform -translate-y-0 left-5 right-5 bottom-4"
+                        >
+                            <a href="#slide3" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-left.svg" alt=""
+                            /></a>
+                            <a href="#slide1" class="btn btn-circle bg-black"
+                                ><img src="./Images/arrow-right.svg" alt=""
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

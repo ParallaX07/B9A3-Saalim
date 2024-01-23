@@ -18,9 +18,8 @@
             theme: {
                 extend: {
                     colors: {
-                        "text-grey": "",
-                        "text-primary": "#014BA0",
-                        "text-white": "",
+                        "text-grey": "#13131899",
+                        "text-primary": "#131318",
                         primary: "#014BA0",
                     },
                 },
@@ -34,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
 </head>
 
-<body class="font-manrope m-5">
+<body class="font-manrope m-5 text-text-primary text-base">
     <header>
         <nav class="flex items-center space-y-3 lg:space-y-0 justify-between lg:w-[1170px] mx-auto lg:mt-16 mt-6">
             <!-- Dropdown menu -->
@@ -61,6 +60,7 @@
 
                     </ul>
                 </div>
+                <!-- team name -->
                 <h1 class="font-extrabold lg:text-4xl text-2xl">
                     Paralla<span class="text-primary">X</span>
                 </h1>
@@ -87,11 +87,13 @@
                     <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-fit">
                         <li>
                             <div class="form-control">
-                                <input type="text" placeholder="Search" class="input input-bordered max-w-full md:w-auto" />
+                                <input type="text" placeholder="Search"
+                                    class="input input-bordered max-w-full md:w-auto" />
                             </div>
                         </li>
                     </ul>
                 </div>
+                <!-- get tickets button -->
                 <button
                     class="btn btn-primary border-primary text-[16px] p-2 lg:px-6 lg:text-xl lg:border-2 hover:border-primary hover:bg-transparent hover:text-black bg-primary max-h-10 lg:max-h-fit text-white font-semibold">
                     Get Tickets
@@ -146,6 +148,58 @@
                 </div>
             </div>
         </section>
+
+        <!-- dashed horizontal line -->
+        <hr class="border-dashed lg:w-[1170px] mx-auto border-[1px] mt-6 lg:mt-24">
+
+        <!-- club facilities -->
+        <section class="lg:w-[1170px] mx-auto lg:mt-8 mt-6 flex flex-col">
+            <!-- text -->
+            <div class="text-center">
+                <h2 class="font-extrabold lg:text-4xl text-2xl">Professional Hockey Club</h2>
+                <p class="text-text-grey mt-2 lg:w-[600px] mx-auto">
+                    Soaring high above the lush green pitch, <strong>Team Paralla<span
+                            class="text-primary">X</span></strong> are a force to be reckoned with. Founded in 2000,
+                    this Dhaka powerhouse has built a legacy of precision passing, thunderous strikes, and unwavering
+                    team spirit!
+                </p>
+            </div>
+            <!-- dashed line -->
+            <hr class="border-dashed lg:w-[1170px] border-[1px] mt-6 lg:mt-8">
+            <!-- stats -->
+            <div class="mt-6 lg:mt-24 flex flex-col lg:flex-row gap-6 lg:gap-8 mx-auto text-center">
+                <div class="">
+                    <div class="radial-progress font-extrabold text-3xl text-[#FFECD6]" style="--value:87; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-text-primary">87%</span></div>
+                    <h2 class="font-semibold text-xl mt-6">Prayer Facility</h2>
+                    <p class="text-text-grey mt-2 lg:w-64 mx-auto">
+                        Seek inner peace and focus before or after training in our dedicated prayer facility. This tranquil space offers a quiet haven for athletes of all faiths to connect with their spirituality and find strength within.
+                    </p>
+                </div>
+                <div>
+                    <div class="radial-progress font-extrabold text-3xl text-[#4CB9E7]" style="--value:95; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-text-primary">95%</span></div>
+                    <h2 class="font-semibold text-xl mt-6">Experienced Coach</h2>
+                    <p class="text-text-grey mt-2 lg:w-64 mx-auto">
+                        Hone your skills under the watchful eye of our experienced coach. With years of expertise and a passion for the game, they'll guide you towards individual and team excellence, pushing you to reach your full potential.
+                    </p>
+                </div>
+                <div>
+                    <div class="radial-progress font-extrabold text-3xl text-[#3559E0]" style="--value:90; --size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-text-primary">90%</span></div>
+                    <h2 class="font-semibold text-xl mt-6">Senior Players</h2>
+                    <p class="text-text-grey mt-2 lg:w-64 mx-auto">
+                        Gain invaluable insights from our seasoned senior players. Their years of experience on the field translate into invaluable mentorship, providing guidance and support to help you navigate the challenges and triumphs of the sport.
+                    </p>
+                </div>
+                <div>
+                    <div class="radial-progress font-extrabold text-3xl text-[#0F2167]" style="--value:80;--size:8rem; --thickness: 1rem;" role="progressbar"><span class="text-text-primary">80%</span></div>
+                    <h2 class="font-semibold text-xl mt-6">Training Ground</h2>
+                    <p class="text-text-grey mt-2 lg:w-64 mx-auto">
+                        Elevate your training with access to our cutting-edge training ground. From a meticulously maintained pitch to advanced training equipment, you'll have everything you need to refine your technique, build endurance, and push your limits.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- dashed line -->
+        <hr class="border-dashed lg:w-[1170px] mx-auto border-[1px] mt-6 lg:mt-24">
     </main>
 </body>
 

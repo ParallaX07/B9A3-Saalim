@@ -602,7 +602,7 @@
 
             <div class="lg:mt-12 mt-6 flex flex-col lg:flex-row gap-6">
                 <!-- contact info -->
-                <div class="Rectangle31718 w-full lg:w-[474px] rounded-2xl border border-neutral-900 border-opacity-10 lg:p-12 p-6 space-y-6">
+                <div class="Rectangle31718 w-full lg:max-w-[474px] lg:h-full rounded-2xl border border-neutral-900 border-opacity-10 lg:p-12 p-6 space-y-6">
                     <div class="bg-[#BCEC6D1A] p-6 lg:p-8 rounded-xl">
                         <img src="./Images/phone.png" alt="">
                         <p class="mt-4 lg:mt-6">Phone Number:</p>
@@ -620,9 +620,33 @@
                     </div>
                 </div>
                 <!-- contact form -->
-                <div>
-                    
-                </div>
+                <form class="grid-cols-1 w-full h-full space-y-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 w-full lg:space-x-6">
+                        <div class="space-y-4">
+                            <label for="name" class="block text-black font-bold text-xl">Name</label>
+                            <input type="text" name="name" id="name" class="rounded-2xl bg-[#13131808] p-5 w-full" placeholder="Enter your full name">
+                        </div>
+                        <div class="space-y-4">
+                            <label for="email" class="block text-black font-bold text-xl">Email</label>
+                            <input type="email" name="email" id="email" class="rounded-2xl bg-[#13131808] p-5 w-full" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 w-full lg:space-x-6">
+                        <div class="space-y-4">
+                            <label for="subject" class="block text-black font-bold text-xl">Subject</label>
+                            <input type="text" name="subject" id="subject" class="rounded-2xl bg-[#13131808] p-5 w-full" placeholder="Enter your subject">
+                        </div>
+                        <div class="space-y-4">
+                            <label for="number" class="block text-black font-bold text-xl">Phone Number</label>
+                            <input type="tel" name="number" id="number" class="rounded-2xl bg-[#13131808] p-5 w-full" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <label for="message" class="block text-black font-bold text-xl">Message</label>
+                        <textarea id="message" class="w-full lg:h-[370px] max-h-fit bg-[#13131808] rounded-2xl p-5 resize-none" placeholder="Write your message"></textarea>
+                    </div>
+                    <button class="p-2 lg:p-[15px] bg-primary w-full text-white  text-xl font-bold rounded-xl">Submit</button>
+                </form>
             </div>
         </section>
     </main>
